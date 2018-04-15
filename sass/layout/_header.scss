@@ -1,3 +1,36 @@
 // HEADER
+.large-hero {
+    &__image {
+        height: 93vh;
+        position: relative;
+    }
+    &__header {
+        position: absolute;
+        @include absCenter;
+        text-align: center;
+        text-transform: capitalize;
 
 
+        &--title {
+            color: rgba($color-blue-dark, .7);
+            font-weight: 300;
+            font-size: 6rem;
+            margin: 0 0 3.5rem 0;
+        }
+        &--subtitle {
+            color: rgba($color-blue-dark, .9);
+            font-weight: 400;
+            font-size: 4rem;
+            margin: 0 0 2.5rem 0;
+        }
+        &--desc {
+            color: rgba($color-white, .9);
+            font-weight: 300;
+            font-size: 3.5rem;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+
+        }
+    }
+
+}
