@@ -1,29 +1,35 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    cssvars = require('postcss-simple-vars'),
-    nested = require('postcss-nested');
+    browserSync = require('browser-sync').create();
 
 gulp.task('default', function () {
-    console.log('default gulp task.');
+    console.log('Hooray, its as default gulp');
 });
+
 gulp.task('html', function () {
-    console.log('html gulp task.');
+    browserSync.reload();
 });
-gulp.task('styles', function () {
-    console.log('css gulp task.');
-});
+
+
+
 gulp.task('watch', function () {
+    browserSync.init({
+        notify: false,
+        server: {
+          baseDir: "app"
+        }
+      });
+    
+      watch('./app/index.html', function() {
+        browserSync.reload();
+      });
+    
+      watch('./app/assets/styles/**/*.css', function() {
+        gulp.start('cssInject');
+      });
+});
 
-    watch('./app/index.html', function () {
-        gulp.start('html');
-
-    });
-
-    watch('./app/assets/styles/**/*.css', function () {
-        return gulp.src('./app/assets/styles/style.css')
-          .pipe(postcss([cssvars, nested, autoprefixer]))
-          .pipe(gulp.dest('./app/temp/styles'));
-    });
+gulp.task('cssInject', function () {
+    return gulp.src('./app/assets/styles/style.css')
+        .pipe(browserSync.stream());
 });

@@ -1,8 +1,12 @@
 // HEADER
 .large-hero {
     &__image {
-        height: 93vh;
+        height: 100vh;
         position: relative;
+        @include respond (phone){
+            height: 80vh;
+
+        }
     }
     &__header {
         position: absolute;
@@ -10,27 +14,36 @@
         text-align: center;
         text-transform: capitalize;
 
-
         &--title {
             color: rgba($color-blue-dark, .7);
             font-weight: 300;
             font-size: 6rem;
             margin: 0 0 3.5rem 0;
+            @include respond (phone){
+                font-size: 5rem;
+                margin-bottom: 1rem;
+            }
         }
         &--subtitle {
             color: rgba($color-blue-dark, .9);
             font-weight: 400;
             font-size: 4rem;
             margin: 0 0 2.5rem 0;
+            @include respond (phone){
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
         }
         &--desc {
             color: rgba($color-white, .9);
             font-weight: 300;
             font-size: 3.5rem;
             line-height: 1.5;
-            margin-bottom: 3rem;
-
+            margin-bottom: 2.5rem;
+            @include respond (phone){
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
         }
     }
-
 }
