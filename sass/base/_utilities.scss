@@ -21,9 +21,9 @@
 }
 
 .u-margin-top-small {
-    margin-top: 2rem;
+    margin-top: 2rem !important;
     @include respond (tab-port) {
-        margin-top: 1rem;
+        margin-top: 1rem !important;
     }
 }
 

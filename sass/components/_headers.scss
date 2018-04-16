@@ -1,0 +1,27 @@
+//Headers
+
+.header{
+    &--second{
+        font-weight: 300;
+        font-size: 3.8rem;
+        text-transform: capitalize;
+        margin: 2.5rem;
+        &--blue{
+            color: $color-blue-dark;
+        }
+    }
+    &--third{
+        font-weight: 300;
+        font-size: 2.8rem;
+        text-transform: capitalize;
+        margin: 2.5rem;
+        &--orange{
+           color: $color-orange-dark;
+        }
+        &--wraped{
+            max-width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

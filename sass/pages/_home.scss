@@ -1,1 +1,26 @@
 // HOME
+.starter {
+    &__banner{
+        margin-top: 2.5rem;
+        display: table;
+    }
+    
+    &__image {
+        &--1 {
+            max-width: 80%;
+            margin-bottom: 5rem;
+        }
+        &--2 {
+            display: table-cell;
+        }
+    }
+    &__info {
+        display: table-cell;
+        font-size: 1.5rem;
+        line-height: 2;
+        &__p{
+            text-align: left;
+        }
+        
+    }
+}

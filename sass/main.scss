@@ -19,6 +19,7 @@ a better practice to do it using the sass folders not the main css file :: #ff00
 @import "base/utilities";
 
 @import "components/button";
+@import "components/headers";
 
 @import "layout/footer";
 @import "layout/grid";
