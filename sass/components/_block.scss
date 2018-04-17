@@ -1,0 +1,26 @@
+.features-section {
+    &__block {
+        color: $color-white;
+        font-size: 1.8rem;
+        position: relative;
+        margin-bottom: 10rem;
+        &--image {
+            float: left;
+            display: block;
+        }
+        &--typo {
+            margin-left: 8rem;
+        }
+        &--header {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        &--para {
+            font-weight: 300;
+            line-height: 1.5;
+            text-align: left;
+        }
+    }
+}
