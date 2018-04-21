@@ -28,18 +28,11 @@
 .features-section{
     padding-top: 4rem;
     background-color: $color-blue-dark;
-    &__header{
-        font-size: 6rem;
-        text-align: center;
-        margin: 3rem 0 10rem 0;
-        color: $color-white;
-        display: block;
-        font-weight: 300;
-        &--image{
-            display: inline-block;
-            margin: 1rem 2rem 0 0;
-        }
-
-    }
     
+}
+.testimonials{
+    background-image: url('../images/testimonials-bg.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 4rem;
 }
