@@ -1,3 +1,16 @@
 // FOOTER
 
 
+.footer{
+    &__para{
+        font-size: 1.4rem;
+        margin: 1.1rem;
+        color: $color-white;
+    }
+    &__link{
+        font-size: 1.2rem !important;
+        margin: 1.5rem 2rem;
+        padding: 1.2rem 2rem !important;
+
+    }
+}

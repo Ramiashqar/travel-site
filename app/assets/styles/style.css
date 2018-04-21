@@ -208,6 +208,16 @@ body {
     padding: .5rem 2rem;
     hyphens: auto; }
 
+.footer__para {
+  font-size: 1.4rem;
+  margin: 1.1rem;
+  color: #FFFFFF; }
+
+.footer__link {
+  font-size: 1.2rem !important;
+  margin: 1.5rem 2rem;
+  padding: 1.2rem 2rem !important; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -324,3 +334,7 @@ body {
   background-position: top;
   background-size: cover;
   padding: 4rem; }
+
+.footer {
+  padding: .5rem;
+  background-color: #2f5572; }
