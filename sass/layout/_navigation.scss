@@ -1,3 +1,46 @@
 // NAVIGATION
 
 
+
+.navigation{
+    display: block;
+    background-color: rgba($color-blue-dark, .9);
+    width: 100%;
+    height: auto;
+    position: relative;
+    @include clearfix;
+    &__logo{
+        float: left;
+        display: block;
+        position: absolute;
+        top: 0;
+        padding: 2rem;
+        margin-left: 7rem;
+        z-index: 2;
+        background-color: $color-blue-dark;
+    }
+    &__list{
+        float: right;
+        text-align: left;
+        list-style: none;
+        &--item{
+            float: left;
+            font-size: 1.8rem;
+            padding: 2rem 1.5rem 1rem 1.5rem;
+
+
+        }
+        &--link{
+            text-decoration: none;
+            color: $color-white;
+            font-weight: 300;
+            &--button{
+                font-size: 1.3rem !important;
+                margin-top: -1rem; 
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+
