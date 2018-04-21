@@ -22,6 +22,7 @@ a better practice to do it using the sass folders not the main css file :: #ff00
 @import "components/headers";
 @import "components/block";
 @import "components/testimonials-card";
+@import "components/sprite";
 
 @import "layout/footer";
 @import "layout/grid";
