@@ -307,6 +307,42 @@ body {
         line-height: 1.2;
         margin-bottom: 1.5rem; } }
 
+.navigation {
+  display: block;
+  background-color: rgba(47, 85, 114, 0.9);
+  width: 100%;
+  height: auto;
+  position: relative; }
+  .navigation::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .navigation__logo {
+    float: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+    margin-left: 7rem;
+    z-index: 2;
+    background-color: #2f5572; }
+  .navigation__list {
+    float: right;
+    text-align: left;
+    list-style: none; }
+    .navigation__list--item {
+      float: left;
+      font-size: 1.8rem;
+      padding: 2rem 1.5rem 1rem 1.5rem; }
+    .navigation__list--link {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300; }
+      .navigation__list--link--button {
+        font-size: 1.3rem !important;
+        margin-top: -1rem;
+        box-shadow: none !important; }
+
 .starter__banner {
   margin-top: 2.5rem;
   display: table; }
