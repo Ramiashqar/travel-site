@@ -1,46 +1,45 @@
 // NAVIGATION
-
-
-
-.navigation{
+.navigation {
     display: block;
     background-color: rgba($color-blue-dark, .9);
     width: 100%;
-    height: auto;
     position: relative;
     @include clearfix;
-    &__logo{
+    &__logo {
+        font-size: 0;
+        color: transparent;
+        background-color: $color-blue-dark;
         float: left;
         display: block;
         position: absolute;
         top: 0;
         padding: 2rem;
-        margin-left: 7rem;
+        margin-left: 10rem;
         z-index: 2;
-        background-color: $color-blue-dark;
     }
-    &__list{
+    &__list {
         float: right;
         text-align: left;
         list-style: none;
-        &--item{
+        &--item {
             float: left;
             font-size: 1.8rem;
             padding: 2rem 1.5rem 1rem 1.5rem;
-
-
         }
-        &--link{
+        &--link {
             text-decoration: none;
             color: $color-white;
             font-weight: 300;
-            &--button{
+            &--button {
                 font-size: 1.3rem !important;
-                margin-top: -1rem; 
+                margin-top: -1rem;
                 box-shadow: none !important;
             }
         }
     }
 }
 
-
+.hide {
+    font-size: 0;
+    z-index: -999;
+}
