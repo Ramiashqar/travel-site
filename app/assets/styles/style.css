@@ -230,7 +230,7 @@ body {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .icon {
-  background-image: url("/assets/images/sprites/sprite-d675eadb.svg"); }
+  background-image: url("../images/sprites/sprite-d675eadb.svg"); }
 
 .icon--clear-view-escapes {
   width: 142.4px;
