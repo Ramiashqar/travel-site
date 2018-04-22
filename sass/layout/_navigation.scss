@@ -5,6 +5,17 @@
     width: 100%;
     position: relative;
     @include clearfix;
+    &__menu-icon{
+        @include respond(tab-port){
+            height: 2rem;
+            width: 2rem;
+            position: absolute;
+            background-color: $color-white;
+            margin-top: 2%;
+            right: 5%;
+            z-index: 10;
+        }
+    }
     &__logo {
         font-size: 0;
         color: transparent;
@@ -16,11 +27,23 @@
         padding: 2rem;
         margin-left: 10rem;
         z-index: 2;
+        @include respond(tab-port){
+            float: none;
+            margin-left: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include respond(phone){
+            padding: 1rem;
+        }
     }
     &__list {
         float: right;
         text-align: left;
         list-style: none;
+        @include respond(tab-port){
+            display: none;
+        }
         &--item {
             float: left;
             font-size: 1.8rem;
@@ -37,9 +60,5 @@
             }
         }
     }
-}
 
-.hide {
-    font-size: 0;
-    z-index: -999;
 }

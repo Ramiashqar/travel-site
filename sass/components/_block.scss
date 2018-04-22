@@ -4,6 +4,13 @@
         font-size: 1.8rem;
         position: relative;
         margin-bottom: 10rem;
+        @include respond(tab-port){
+            font-size: 1.6rem;
+            &--end{
+                margin-bottom: 0;
+
+            }
+        }
         &--image {
             float: left;
             display: block;

@@ -34,6 +34,9 @@
         color: $color-white;
         display: block;
         font-weight: 300;
+        @include respond(phone){
+            font-size: 4rem;
+        }
         &--blue{
             color: $color-blue-dark;
         }
@@ -41,6 +44,9 @@
         &--image{
             display: inline-block;
             margin: 1rem 2rem 0 0;
+            @include respond(phone){
+                margin: 0rem .5rem -1rem 0;
+            }
         }
 
     }

@@ -18,16 +18,22 @@
         display: table-cell;
         font-size: 1.5rem;
         line-height: 2;
+        
         &__p{
             text-align: left;
+            padding:0 2rem;
         }
         
     }
 }
 
 .features-section{
-    padding-top: 4rem;
+    padding: 4rem 1rem 1rem 2rem;
     background-color: $color-blue-dark;
+    @include respond(phone){
+        
+
+    }
     
 }
 .testimonials{
@@ -35,6 +41,9 @@
     background-position: top;
     background-size: cover;
     padding: 4rem;
+    @include respond(phone){
+        padding: 1rem;
+    }
 }
 .footer{
     padding: .5rem;

@@ -2,17 +2,25 @@
 .large-hero {
     &__image {
         width: 100%;
-        height: 93vh;
         position: relative;
+        height: 60rem;
         border-bottom: 1rem solid $color-blue-dark;
         display: inline-block;
+        @include respond(phone){
+            height: 50rem;
+        }
 
     }
     &__header {
+        padding-top: 15rem;
+        height: 100vh;
         display: block;
         @include absCenter;
         text-align: center;
         text-transform: capitalize;
+        @include respond(phone){
+            padding-top: 10rem;
+        }
         &--title {
             color: rgba($color-blue-dark, .7);
             font-size: 5.5rem;
@@ -30,10 +38,10 @@
         &--subtitle {
             color: rgba($color-blue-dark, .9);
             font-weight: 400;
-            font-size: 3rem;
             font-size: 4.5rem;
             margin: 0 0 3.5rem 0;
             @include respond(phone) {
+                font-size: 3rem;
                 margin-bottom: 2.5rem;
             }
         }
@@ -44,10 +52,15 @@
             line-height: 1.5;
             margin-bottom: 2.5rem;
             @include respond(phone) {
-                font-size: 2.5rem;
-                line-height: 1.2;
-                margin-bottom: 1.5rem;
+                font-size: 2.2rem;
+                line-height: 1.5;
+                margin-bottom: 2.5rem;
             }
+        }
+    }
+    &__button{
+        @include respond(phone){
+            padding: 1rem 2.5rem !important;
         }
     }
 }
