@@ -19,7 +19,7 @@
         text-align: center;
         text-transform: capitalize;
         @include respond(phone){
-            padding-top: 10rem;
+            padding-top: 13rem;
         }
         &--title {
             color: rgba($color-blue-dark, .7);

@@ -195,11 +195,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .testimonials__card {
       max-width: 40rem;
-      margin: 1rem 10rem; } }
+      left: 50%;
+      transform: translateX(-50%); } }
   @media only screen and (max-width: 37.5em) {
     .testimonials__card {
-      max-width: auto;
-      margin: 0; } }
+      max-width: 35rem; } }
   .testimonials__card--image {
     display: block;
     position: absolute;
@@ -365,7 +365,7 @@ Instead edit gulp/templates/sprite */
   text-transform: capitalize; }
   @media only screen and (max-width: 37.5em) {
     .large-hero__header {
-      padding-top: 10rem; } }
+      padding-top: 13rem; } }
   .large-hero__header--title {
     color: rgba(47, 85, 114, 0.7);
     font-size: 5.5rem;
@@ -441,7 +441,7 @@ Instead edit gulp/templates/sprite */
         transform: translateX(-50%); } }
     @media only screen and (max-width: 37.5em) {
       .navigation__logo {
-        padding: 1rem; } }
+        padding: .5rem; } }
   .navigation__list {
     float: right;
     text-align: left;

@@ -34,7 +34,7 @@
             transform: translateX(-50%);
         }
         @include respond(phone){
-            padding: 1rem;
+            padding: .5rem;
         }
     }
     &__list {

@@ -5,11 +5,12 @@
     background-color: rgba($color-white, .3);
     @include respond(tab-port){
         max-width: 40rem;
-        margin: 1rem 10rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
     @include respond(phone){
-        max-width: auto;
-        margin: 0;
+        max-width: 35rem;
+        
     }
 
 
