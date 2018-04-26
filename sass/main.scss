@@ -1,39 +1,30 @@
 // MAIN
-
-
 /* 
 
 #ff0000 :: This entier css code is written by node:sass. So to apply maintainance and modifications it's
 a better practice to do it using the sass folders not the main css file :: #ff0000
 
 */
-// @import "../node_modules/normalize.css/normalize";
 
+// @import "../node_modules/normalize.css/normalize";
 @import "abstract/functions";
 @import "abstract/mixins";
 @import "abstract/variables";
-
 @import "base/animations";
 @import "base/global";
 @import "base/typography";
 @import "base/utilities";
-
 @import "components/button";
 @import "components/headers";
 @import "components/block";
 @import "components/testimonials-card";
 @import "components/sprite";
-
+@import "components/reveal-on-scroll";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
-
 @import "pages/home";
-
-
-
-
 //TODO:
 //[]add sprites support
 //[]check resposivity

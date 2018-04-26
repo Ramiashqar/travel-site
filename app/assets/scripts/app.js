@@ -16,5 +16,10 @@
 // Jane.PayTaxis();
 
 import MobileMenu from './modules/mobile-menu';
+import $ from 'jquery';
+
+import RevealOnScroll from './modules/RevealOnScroll';
 
 var mobileMenu = new MobileMenu();
+new RevealOnScroll($(".features-section__block"), "85%");
+new RevealOnScroll($(".testimonials__card"), "65%");
