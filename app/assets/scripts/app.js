@@ -1,11 +1,20 @@
-function Person(fullName, color) {
-    this.name = fullName;
-    this.favColor = color;
-    this.greet = function () {
-        console.log("Hi, My name is " + this.name +"and my favirout color is "+ this.favColor);
-    };
-}
+// var $ = require('jquery');
+// import Person from './modules/person';
 
-john = new Person("Rami Ashqar ", "blue");
 
-john.greet();
+// class Adult extends Person {
+//     PayTaxis() {
+//         console.log(this.name + "now ows $0 in taxes");
+//     }
+// }
+
+// var john = new Person("Rami Ashqar 1 ", "blue");
+// john.greet();
+
+// var Jane = new Adult("Jane ", "green");
+// Jane.greet();
+// Jane.PayTaxis();
+
+import MobileMenu from './modules/mobile-menu';
+
+var mobileMenu = new MobileMenu();
