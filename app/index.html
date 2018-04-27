@@ -14,27 +14,30 @@
 <body>
   <section class="navigation">
     <header>
-      <div class="navigation__logo">
-        <div class="icon icon--clear-view-escapes">
-          Clear View Escapes
-        </div>
-      </div>
+
       <div class="navigation__menu-icon">
         <span class=" navigation__menu-icon--icon">&nbsp;</span>
       </div>
 
 
       <nav class="navigation__element">
+        <div class="navigation__logo">
+          <div class="icon icon--clear-view-escapes">
+            Clear View Escapes
+          </div>
+        </div>
         <ul class="navigation__list">
           <li class="navigation__list--item">
-            <a class="navigation__list--link" class="navigation__list--link" href="#our-beginning">Our Beginning</a>
+            <a class="navigation__list--link" href="#testimonials" id="testimonials-link">Testimonials</a>
           </li>
           <li class="navigation__list--item">
-            <a class="navigation__list--link" href="#features">Features</a>
+            <a class="navigation__list--link" href="#features" id="features-link">Features</a>
           </li>
           <li class="navigation__list--item">
-            <a class="navigation__list--link" href="#testimonials">Testimonials</a>
+            <a class="navigation__list--link" href="#our-beginning" id="begining-link">Our Beginning</a>
           </li>
+
+
         </ul>
 
       </nav>
@@ -66,7 +69,7 @@
     </div>
   </section>
 
-  <section class="starter u-margin-top-big u-margin-bottom-big" id="our-beginning">
+  <section class="page-section starter u-margin-top-big u-margin-bottom-big" id="our-beginning" data-link-headers="#begining-link">
 
     <h2 class="header--second header--second--blue">The first trip we planned
       <strong>was our own.</strong>
@@ -117,52 +120,52 @@
 
   </section>
 
-  <section class="features-section" id="features">
+  <section class="features-section page-section" id="features" data-link-headers="#features-link">
 
 
     <h2 class="section__header">
-      <span class="icon icon--star section__header--image"></span>
+      <span class=" icon icon--star section__header--image "></span>
       <strong>Features</strong>
     </h2>
 
 
-    <div class="row">
-      <div class="col-1-of-2">
-        <div class="features-section__block">
-          <span class="icon icon--rain features-section__block--image"></span>
+    <div class="row ">
+      <div class="col-1-of-2 ">
+        <div class="features-section__block ">
+          <span class="icon icon--rain features-section__block--image "></span>
 
-          <div class="features-section__block--typo">
-            <h3 class="features-section__block--header">We&rsquo;ll Watch the Weather</h3>
-            <p class="features-section__block--para">Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around
+          <div class="features-section__block--typo ">
+            <h3 class="features-section__block--header ">We&rsquo;ll Watch the Weather</h3>
+            <p class="features-section__block--para ">Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around
               your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
           </div>
         </div>
 
-        <div class="features-section__block features-section__block--end">
-          <span class="icon icon--globe features-section__block--image"></span>
-          <div class="features-section__block--typo">
-            <h3 class="features-section__block--header">Global Guides</h3>
-            <p class="features-section__block--para">We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of
+        <div class="features-section__block features-section__block--end ">
+          <span class="icon icon--globe features-section__block--image "></span>
+          <div class="features-section__block--typo ">
+            <h3 class="features-section__block--header ">Global Guides</h3>
+            <p class="features-section__block--para ">We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of
               the world you want to escape to we know the most scenic and inspiring locations.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-1-of-2">
-        <div class="features-section__block">
-          <span class="icon icon--wifi features-section__block--image"></span>
-          <div class="features-section__block--typo">
-            <h3 class="features-section__block--header">Wi-Fi Waypoints</h3>
-            <p class="features-section__block--para">We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped
+      <div class="col-1-of-2 ">
+        <div class="features-section__block ">
+          <span class="icon icon--wifi features-section__block--image "></span>
+          <div class="features-section__block--typo ">
+            <h3 class="features-section__block--header ">Wi-Fi Waypoints</h3>
+            <p class="features-section__block--para ">We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped
               out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
           </div>
         </div>
 
-        <div class="features-section__block">
-          <span class="icon icon--fire features-section__block--image"></span>
-          <div class="features-section__block--typo">
-            <h3 class="features-section__block--header">Survival Kit</h3>
-            <p class="features-section__block--para">Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow
+        <div class="features-section__block ">
+          <span class="icon icon--fire features-section__block--image "></span>
+          <div class="features-section__block--typo ">
+            <h3 class="features-section__block--header ">Survival Kit</h3>
+            <p class="features-section__block--para ">Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow
               you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
           </div>
         </div>
@@ -171,58 +174,55 @@
 
   </section>
 
-  <section class="testimonials" id="testimonials">
+  <section class="testimonials page-section " id="testimonials" data-link-headers="#testimonials-link ">
 
-    <h2 class="section__header section__header--blue">
-      <span class="icon icon--comment section__header--image"></span>Real
+    <h2 class="section__header section__header--blue ">
+      <span class="icon icon--comment section__header--image "></span>Real
       <strong>Testimonials</strong>
     </h2>
 
-    <div class="row">
-      <div class="col-1-of-3 testimonials__card">
-        <img srcset="assets/images/testimonial-jane.jpg 1x,
-        assets/images/testimonial-jane-hi-dpi.jpg 2x" alt="Coastal view of ocean and mountains" class="testimonials__card--image"
-        />
+    <div class="row ">
+      <div class="col-1-of-3 testimonials__card ">
+        <img srcset="assets/images/testimonial-jane.jpg 1x, assets/images/testimonial-jane-hi-dpi.jpg 2x " alt="Coastal
+      view of ocean and mountains " class="testimonials__card--image " />
 
 
-        <h3 class="testimonials__card__header--blue">Jane Doe</h3>
-        <h3 class="testimonials__card__header--orange">9 Time Escaper</h3>
-        <p class="testimonials__card--para">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        <h3 class="testimonials__card__header--blue ">Jane Doe</h3>
+        <h3 class="testimonials__card__header--orange ">9 Time Escaper</h3>
+        <p class="testimonials__card--para ">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
           dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
       </div>
 
-      <div class="col-1-of-3 testimonials__card">
-        <img srcset="assets/images/testimonial-john.jpg 1x,
-          assets/images/testimonial-john-hi-dpi.jpg 2x" alt="Coastal view of ocean and mountains" class="testimonials__card--image"
-        />
-        <h3 class="testimonials__card__header--blue">John Smith</h3>
-        <h3 class="testimonials__card__header--orange">4 Time Escaper</h3>
-        <p class="testimonials__card--para">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      <div class="col-1-of-3 testimonials__card ">
+        <img srcset="assets/images/testimonial-john.jpg 1x, assets/images/testimonial-john-hi-dpi.jpg 2x " alt="Coastal
+      view of ocean and mountains " class="testimonials__card--image " />
+        <h3 class="testimonials__card__header--blue ">John Smith</h3>
+        <h3 class="testimonials__card__header--orange ">4 Time Escaper</h3>
+        <p class="testimonials__card--para ">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
           dolor sit amet, consectetur.&rdquo;</p>
       </div>
 
-      <div class="col-1-of-3 testimonials__card">
-        <img srcset="assets/images/testimonial-cat.jpg 1x,
-          assets/images/testimonial-cat-hi-dpi.jpg 2x" alt="Coastal view of ocean and mountains" class="testimonials__card--image"
-        />
+      <div class="col-1-of-3 testimonials__card ">
+        <img srcset="assets/images/testimonial-cat.jpg 1x, assets/images/testimonial-cat-hi-dpi.jpg 2x " alt="Coastal view
+      of ocean and mountains " class="testimonials__card--image " />
 
-        <h3 class="testimonials__card__header--blue">Cat McKitty</h3>
-        <h3 class="testimonials__card__header--orange">6 Time Escaper</h3>
-        <p class="testimonials__card--para">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        <h3 class="testimonials__card__header--blue ">Cat McKitty</h3>
+        <h3 class="testimonials__card__header--orange ">6 Time Escaper</h3>
+        <p class="testimonials__card--para ">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
           dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p class="footer__para">Copyright &copy; 2016 Clear View Escapes. All rights reserved.
-      <a class="footer__link btn btn--orange " href="#">Get in Touch</a>
+  <footer class="footer ">
+    <p class="footer__para ">Copyright &copy; 2016 Clear View Escapes. All rights reserved.
+      <a class="footer__link btn btn--orange " href="# ">Get in Touch</a>
     </p>
   </footer>
-  <script type='text/javascript' src="temp/app.js">
+  <script type='text/javascript' src="temp/app.js ">
   </script>
 </body>
 

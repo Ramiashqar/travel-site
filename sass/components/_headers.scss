@@ -1,24 +1,23 @@
 //Headers
-
-.header{
-    &--second{
+.header {
+    &--second {
         font-weight: 300;
         font-size: 3.8rem;
         text-transform: capitalize;
         margin: 2.5rem;
-        &--blue{
+        &--blue {
             color: $color-blue-dark;
         }
     }
-    &--third{
+    &--third {
         font-weight: 300;
         font-size: 2.8rem;
         text-transform: capitalize;
         margin: 2.5rem;
-        &--orange{
-           color: $color-orange-dark;
+        &--orange {
+            color: $color-orange-dark;
         }
-        &--wraped{
+        &--wraped {
             max-width: 40%;
             margin-left: auto;
             margin-right: auto;
@@ -26,28 +25,26 @@
     }
 }
 
-.section{
-    &__header{
+.section {
+    &__header {
         font-size: 6rem;
         text-align: center;
         margin: 3rem 0 10rem 0;
         color: $color-white;
         display: block;
         font-weight: 300;
-        @include respond(phone){
+        @include respond(phone) {
             font-size: 4rem;
         }
-        &--blue{
+        &--blue {
             color: $color-blue-dark;
         }
-
-        &--image{
+        &--image {
             display: inline-block;
             margin: 1rem 2rem 0 0;
-            @include respond(phone){
+            @include respond(phone) {
                 margin: 0rem .5rem -1rem 0;
             }
         }
-
     }
 }

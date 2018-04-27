@@ -19,7 +19,9 @@ import MobileMenu from './modules/mobile-menu';
 import $ from 'jquery';
 
 import RevealOnScroll from './modules/RevealOnScroll';
+import StickyHeader from './modules/StickyHeader';
 
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".features-section__block"), "85%");
-new RevealOnScroll($(".testimonials__card"), "65%");
+new RevealOnScroll($(".testimonials__card"), "75%");
+var stickyHeader = new StickyHeader();
