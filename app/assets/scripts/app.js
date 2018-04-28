@@ -15,13 +15,15 @@
 // Jane.greet();
 // Jane.PayTaxis();
 
-import MobileMenu from './modules/mobile-menu';
+import MobileMenu from './modules/Mobile-menu';
 import $ from 'jquery';
 
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+import Modal from './modules/Modal';
 
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".features-section__block"), "85%");
 new RevealOnScroll($(".testimonials__card"), "75%");
 var stickyHeader = new StickyHeader();
+var modal = new Modal();

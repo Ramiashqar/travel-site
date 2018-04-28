@@ -17,7 +17,7 @@
             height: 5rem;
             width: 5rem;
             border-radius: 50%;
-            background-color: $color-orange-dark;
+            background-color: rgba($color-orange-dark, .8);
             z-index: 100;
             cursor: pointer;
             &--activated {
@@ -35,7 +35,7 @@
                 &::before {
                     width: 2.5rem;
                     height: 2px;
-                    background-color: $color-white;
+                    background-color: rgba($color-white, .8);
                     display: inline-block;
                 }
                 &::before,

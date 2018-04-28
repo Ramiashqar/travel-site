@@ -1,0 +1,51 @@
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-out;
+    position: fixed;
+    background-color: rgba($color-white, .9);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    &__inner {
+        @include absCenter;
+    }
+    &__social-icons {
+        text-align: center;
+        &__icon {
+            background-color: $color-orange;
+            display: inline-block;
+            margin: 0 5px 5px 5px;
+            width: 31% !important;
+            height: 72px;
+            position: relative;
+            .icon {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &--x-close {
+        font-size: 3rem;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        cursor: pointer;
+        transition: transform .2s ease-out;
+        backface-visibility: hidden;
+        &:hover {
+            color: $color-orange-dark;
+            transform: scale(1.4) translateY(-.2rem);
+            transform-origin: center;
+        }
+    }
+    &--is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}

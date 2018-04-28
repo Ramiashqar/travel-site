@@ -1,20 +1,12 @@
-.testimonials__card{
+.testimonials__card {
     border: 1px solid $color-blue-dark;
     position: relative;
     height: 43rem;
     background-color: rgba($color-white, .3);
-    @include respond(tab-port){
-        max-width: 40rem;
-        left: 50%;
-        transform: translateX(-50%);
+    @include respond(tab-land) {
+        padding-left: 0;
     }
-    @include respond(phone){
-        max-width: 35rem;
-        
-    }
-
-
-    &--image{
+    &--image {
         display: block;
         position: absolute;
         top: 0;
@@ -22,25 +14,21 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
         border: 5px solid $color-white;
-
-        
     }
-    &__header{
-        
-        &--blue{
+    &__header {
+        &--blue {
             font-size: 2rem;
             color: $color-blue-dark;
             padding: 10rem 0 1rem 0;
         }
-        &--orange{
+        &--orange {
             font-size: 1.4rem;
             color: $color-orange-dark;
             padding-bottom: 1rem;
             font-weight: 500;
         }
-
     }
-    &--para{
+    &--para {
         color: $color-blue-dark;
         font-weight: 500;
         text-indent: 3rem;

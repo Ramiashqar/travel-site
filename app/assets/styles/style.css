@@ -183,19 +183,61 @@ body {
     line-height: 1.5;
     text-align: left; }
 
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-out;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; }
+  .modal__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .modal__social-icons {
+    text-align: center; }
+    .modal__social-icons__icon {
+      background-color: #FF851B;
+      display: inline-block;
+      margin: 0 5px 5px 5px;
+      width: 31% !important;
+      height: 72px;
+      position: relative; }
+      .modal__social-icons__icon .icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .modal--x-close {
+    font-size: 3rem;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+    backface-visibility: hidden; }
+    .modal--x-close:hover {
+      color: #d59541;
+      transform: scale(1.4) translateY(-0.2rem);
+      transform-origin: center; }
+  .modal--is-visible {
+    visibility: visible;
+    opacity: 1; }
+
 .testimonials__card {
   border: 1px solid #2f5572;
   position: relative;
   height: 43rem;
   background-color: rgba(255, 255, 255, 0.3); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .testimonials__card {
-      max-width: 40rem;
-      left: 50%;
-      transform: translateX(-50%); } }
-  @media only screen and (max-width: 37.5em) {
-    .testimonials__card {
-      max-width: 35rem; } }
+      padding-left: 0; } }
   .testimonials__card--image {
     display: block;
     position: absolute;
@@ -292,13 +334,12 @@ Instead edit gulp/templates/sprite */
   transition: all 1.5s ease-out; }
   .reveal-item--hidden {
     opacity: 0;
-    transform: scale(1.3); }
+    visibility: hidden;
+    transform: scale(1.2); }
   .reveal-item--visible {
     opacity: 1;
+    visibility: visible;
     transform: scale(1); }
-  @media only screen and (max-width: 56.25em) {
-    .reveal-item--visible.testimonials__card {
-      transform: scale(1) translateX(-50%); } }
 
 .footer__para {
   font-size: 1.4rem;
@@ -433,7 +474,7 @@ Instead edit gulp/templates/sprite */
       height: 5rem;
       width: 5rem;
       border-radius: 50%;
-      background-color: #d59541;
+      background-color: rgba(213, 149, 65, 0.8);
       z-index: 100;
       cursor: pointer; }
       .navigation__menu-icon--activated {
@@ -448,7 +489,7 @@ Instead edit gulp/templates/sprite */
         .navigation__menu-icon--icon, .navigation__menu-icon--icon::after, .navigation__menu-icon--icon::before {
           width: 2.5rem;
           height: 2px;
-          background-color: #FFFFFF;
+          background-color: rgba(255, 255, 255, 0.8);
           display: inline-block; }
         .navigation__menu-icon--icon::before, .navigation__menu-icon--icon::after {
           content: "";
