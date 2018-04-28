@@ -31,12 +31,14 @@
 }
 
 .testimonials {
-    background-image: url('../images/testimonials-bg.jpg');
-    background-position: top;
-    background-size: cover;
-    padding: 4rem;
-    @include respond(phone) {
-        padding: 1rem;
+    &.lazyloaded {
+        background-image: url('../images/testimonials-bg.jpg');
+        background-position: top;
+        background-size: cover;
+        padding: 4rem;
+        @include respond(phone) {
+            padding: 1rem;
+        }
     }
 }
 

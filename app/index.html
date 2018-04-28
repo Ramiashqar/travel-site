@@ -9,6 +9,7 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel" />
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you."
   />
+  <script src="temp/Vendor.js"></script>
 </head>
 
 <body>
@@ -50,14 +51,15 @@
 
   <section class="large-hero">
     <picture class="large-hero__image">
-      <source sizes="640px" srcset="assets/images/hero--smaller.jpg 640w,
+      <source sizes="640px" data-srcset="assets/images/hero--smaller.jpg 640w,
         assets/images/hero--smaller-hi-dpi.jpg 1280w" media="(max-width: 37.5em)" />
-      <source sizes="990px" srcset="assets/images/hero--small.jpg 990w,
+      <source sizes="990px" data-srcset="assets/images/hero--small.jpg 990w,
         assets/images/hero--small-hi-dpi.jpg 1980w" media="max-width: 56.25em" />
-      <source sizes="1380px" srcset="assets/images/hero--medium.jpg 1380w,
+      <source sizes="1380px" data-srcset="assets/images/hero--medium.jpg 1380w,
         assets/images/hero--medium-hi-dpi.jpg 2760w" media="(max-width: 75em)" />
-      <img srcset="assets/images/hero--large.jpg 1x,
-        assets/images/hero--large-hi-dpi.jpg 2x" alt="Coastal view of ocean and mountains" class="large-hero__image" />
+      <img data-srcset="assets/images/hero--large.jpg 1x,
+        assets/images/hero--large-hi-dpi.jpg 2x" alt="Coastal view of ocean and mountains" class="lazyload large-hero__image"
+      />
     </picture>
     <div class="large-hero__header">
       <h1 class="large-hero__header--title">Your clarity.</h1>
@@ -79,21 +81,21 @@
     </h3>
 
 
-    <img sizes="(min-width: 56.25) 976px, 100vw" srcset="assets/images/first-trip-low-res.jpg 565w,
+    <img sizes="(min-width: 56.25) 976px, 100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w,
         assets/images/first-trip.jpg 976w,
-        assets/images/first-trip-hi-dpi.jpg 1952w" src="assets/images/first-trip.jpg" alt="couple walking" class="starter__image--1"
+        assets/images/first-trip-hi-dpi.jpg 1952w" data-src="assets/images/first-trip.jpg" alt="couple walking" class="starter__image--1 lazyload"
     />
 
     <div class="row starter__banner">
       <div class="col-1-of-3">
         <picture class="starter__image--2">
-          <source srcset="assets/images/our-start-landscape-small.jpg 565w" media="(max-width: 37.5em)" />
-          <source srcset="assets/images/our-start-landscape.jpg 800w,
+          <source data-srcset="assets/images/our-start-landscape-small.jpg 565w" media="(max-width: 37.5em)" />
+          <source data-srcset="assets/images/our-start-landscape.jpg 800w,
             assets/images/our-start-landscape-hi-dpi.jpg 1600w" media="(max-width: 56.25em)" />
-          <source srcset="assets/images/our-start-portrait.jpg 382w,
+          <source data-srcset="assets/images/our-start-portrait.jpg 382w,
             assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(max-width: 75em)" />
-          <img srcset="assets/images/our-start.jpg 1x,
-          assets/images/our-start-hi-dpi.jpg 2x " alt="Our founder, Jane Doe" class="starter__image--2">
+          <img data-srcset="assets/images/our-start.jpg 1x,
+          assets/images/our-start-hi-dpi.jpg 2x " alt="Our founder, Jane Doe" class="lazyload starter__image--2">
         </picture>
 
       </div>
@@ -174,7 +176,7 @@
 
   </section>
 
-  <section class="testimonials page-section " id="testimonials" data-link-headers="#testimonials-link ">
+  <section class="testimonials page-section lazyload" id="testimonials" data-link-headers="#testimonials-link ">
 
     <h2 class="section__header section__header--blue ">
       <span class="icon icon--comment section__header--image "></span>Real
@@ -183,8 +185,8 @@
 
     <div class="row ">
       <div class="col-1-of-3 testimonials__card ">
-        <img srcset="assets/images/testimonial-jane.jpg 1x, assets/images/testimonial-jane-hi-dpi.jpg 2x " alt="Coastal
-      view of ocean and mountains " class="testimonials__card--image " />
+        <img data-srcset="assets/images/testimonial-jane.jpg 1x, assets/images/testimonial-jane-hi-dpi.jpg 2x " alt="Coastal
+          view of ocean and mountains " class="testimonials__card--image lazyload" />
 
 
         <h3 class="testimonials__card__header--blue ">Jane Doe</h3>
@@ -195,8 +197,8 @@
       </div>
 
       <div class="col-1-of-3 testimonials__card ">
-        <img srcset="assets/images/testimonial-john.jpg 1x, assets/images/testimonial-john-hi-dpi.jpg 2x " alt="Coastal
-      view of ocean and mountains " class="testimonials__card--image " />
+        <img data-srcset="assets/images/testimonial-john.jpg 1x, assets/images/testimonial-john-hi-dpi.jpg 2x " alt="Coastal
+          view of ocean and mountains " class="testimonials__card--image lazyload" />
         <h3 class="testimonials__card__header--blue ">John Smith</h3>
         <h3 class="testimonials__card__header--orange ">4 Time Escaper</h3>
         <p class="testimonials__card--para ">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -205,8 +207,8 @@
       </div>
 
       <div class="col-1-of-3 testimonials__card ">
-        <img srcset="assets/images/testimonial-cat.jpg 1x, assets/images/testimonial-cat-hi-dpi.jpg 2x " alt="Coastal view
-      of ocean and mountains " class="testimonials__card--image " />
+        <img data-srcset="assets/images/testimonial-cat.jpg 1x, assets/images/testimonial-cat-hi-dpi.jpg 2x " alt="Coastal view
+          of ocean and mountains " class="testimonials__card--image lazyload" />
 
         <h3 class="testimonials__card__header--blue ">Cat McKitty</h3>
         <h3 class="testimonials__card__header--orange ">6 Time Escaper</h3>
