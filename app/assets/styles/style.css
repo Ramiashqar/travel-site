@@ -339,10 +339,16 @@ Instead edit gulp/templates/sprite */
     opacity: 0;
     visibility: hidden;
     transform: scale(1.2); }
+    @media only screen and (max-width: 56.25em) {
+      .reveal-item--hidden {
+        transform: scale(1); } }
   .reveal-item--visible {
     opacity: 1;
     visibility: visible;
     transform: scale(1); }
+    @media only screen and (max-width: 56.25em) {
+      .reveal-item--visible {
+        transform: scale(1); } }
 
 .footer__para {
   font-size: 1.4rem;
@@ -470,10 +476,8 @@ Instead edit gulp/templates/sprite */
     .navigation__menu-icon {
       display: inline-block;
       position: fixed;
-      height: 5rem;
-      width: 5rem;
-      top: 4rem;
-      right: 6rem;
+      top: 2rem;
+      right: 3rem;
       height: 5rem;
       width: 5rem;
       border-radius: 50%;
@@ -536,7 +540,6 @@ Instead edit gulp/templates/sprite */
       .navigation__logo {
         padding: .5rem; } }
   .navigation__element {
-    background-image: linear-gradient(to right bottom, rgba(47, 85, 114, 0.8), rgba(255, 255, 255, 0.2));
     background-color: rgba(47, 85, 114, 0.9);
     right: 0;
     text-align: left;
@@ -544,7 +547,6 @@ Instead edit gulp/templates/sprite */
     width: 100%;
     top: 0; }
     .navigation__element--dark {
-      background-image: linear-gradient(to right bottom, rgba(47, 85, 114, 0.9), rgba(255, 255, 255, 0.05));
       background-color: #2f5572; }
     @media only screen and (max-width: 56.25em) {
       .navigation__element {
@@ -575,7 +577,7 @@ Instead edit gulp/templates/sprite */
         left: 50%;
         transform: translate(-50%, -50%); } }
     .navigation__list--item {
-      float: right;
+      float: left;
       font-size: 1.8rem;
       padding: 2rem 1.5rem 1rem 1.5rem;
       cursor: pointer; }
@@ -583,7 +585,6 @@ Instead edit gulp/templates/sprite */
         .navigation__list--item {
           display: inline-block;
           float: none;
-          background-color: rgba(47, 85, 114, 0.1);
           padding: 1.5rem 1.5rem;
           letter-spacing: .1rem;
           text-transform: uppercase;
@@ -619,7 +620,7 @@ Instead edit gulp/templates/sprite */
     font-weight: 300;
     position: fixed;
     font-size: 1.3rem !important;
-    left: 0;
+    right: .1rem;
     top: 0;
     height: 5.1rem;
     z-index: 300;

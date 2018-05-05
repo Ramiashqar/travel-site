@@ -11,26 +11,23 @@ class MobileMenu {
         this.menuElement = $('.navigation__list--link');
         this.events();
     }
+
     events() {
         this.menuIcon.click(this.toggleMenu.bind(this));
         this.menuElement.click(this.hideMenu.bind(this));
-
-
     }
+
     toggleMenu() {
         this.menuContent.toggleClass('navigation__element--visible');
         this.button.toggleClass('navigation--button--visible');
         this.menuIconLabel.toggleClass('navigation__menu-icon--icon--click');
         this.menuIcon.toggleClass('navigation__menu-icon--activated');
     }
+
     hideMenu() {
         this.toggleMenu();
-        this.menuContent.removeClass('navigation__element--visible');
-
-
-
-
     }
 
 }
+
 export default MobileMenu;

@@ -64,7 +64,6 @@ class StickyHeader {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-link-headers");
                         that.headerLinks.removeClass("is-current-link");
                         $(matchingHeaderLink).addClass("is-current-link");
-                        console.log("up");
 
                     }
                 },

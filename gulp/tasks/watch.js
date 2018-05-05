@@ -29,7 +29,7 @@ gulp.task('watch', function () {
 gulp.task('scriptsRefresh', ['scripts'], function () {
     browserSync.reload();
 });
-gulp.task('cssInject', ['watch:sass'], function () {
+gulp.task('cssInject', function () {
     return gulp.src('./app/assets/styles/style.css')
         .pipe(browserSync.stream());
 });

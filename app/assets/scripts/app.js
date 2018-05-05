@@ -22,8 +22,8 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
 
-var mobileMenu = new MobileMenu();
-new RevealOnScroll($(".features-section__block"), "85%");
-new RevealOnScroll($(".testimonials__card"), "75%");
-var stickyHeader = new StickyHeader();
-var modal = new Modal();
+const mobileMenu = new MobileMenu();
+const revealOnScroll1 = new RevealOnScroll($(".features-section__block"), "85%");
+const revealOnScroll2 = new RevealOnScroll($(".testimonials__card"), "75%");
+const stickyHeader = new StickyHeader();
+const modal = new Modal();
