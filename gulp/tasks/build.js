@@ -76,4 +76,4 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function () {
 });
 
 
-gulp.task('build', [ 'deleteDistFolder', 'optimizeImages', 'usemin','prefix', 'copyGeneralFiles']);
+gulp.task('build', [ 'deleteDistFolder', 'optimizeImages', 'usemin', 'prefix', 'copyGeneralFiles']);
